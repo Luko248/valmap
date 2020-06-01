@@ -1,0 +1,61 @@
+﻿
+$light-green: #acd987;
+$white: #ffffff;
+$black: #000000;
+$gold: #c28800;
+$gold-light: lighten($gold, 10%);
+$text-color: #e5d9be;
+$navigation-text: #222831;
+$navigation-text-dark: #393E46;
+
+
+$navigation-height: 100px;
+$navigation-heifht-fixed: 60px;
+
+
+//section colors
+$navigation-color: #2c2c2c;
+$section1: #222831;
+$section2: #393E46;
+$section4: #EEEEEE;
+$transparent-black: rgba(0, 0, 0, 0.5);
+$validation-red: rgba(214, 19, 19, 0.84);
+
+$Lato: 'Lato-Medium';
+$Montserrat: 'Montserrat-Regular';
+$font-awesome: 'font-awesome';
+
+
+@font-face {
+    font-family: 'Lato-Medium';
+    src: url('/Resources/fonts/Lato-Medium.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(/Resources/fonts/Montserrat-Regular.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "font-awesome";
+    src: url(/Resources/fonts/fontAwesome/fontawesome-webfont.ttf) format("truetype"), url(/Resources/fonts/fontAwesome/fontawesome-webfont.woff) format("truetype"), url(/Resources/fonts/fontAwesome/fontawesome-webfont.woff2) format("truetype");
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}

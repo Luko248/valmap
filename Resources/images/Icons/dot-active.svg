@@ -1,0 +1,9 @@
+<svg id="SvgjsSvg1011" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="12" height="12">
+  <defs id="SvgjsDefs1012">
+    <clipPath id="SvgjsClipPath1016">
+      <path id="SvgjsPath1015" d="M404 2361C404 2357.68629 406.68629 2355 410 2355C413.31371 2355 416 2357.68629 416 2361C416 2364.31371 413.31371 2367 410 2367C406.68629 2367 404 2364.31371 404 2361Z " fill="#ffffff"></path>
+    </clipPath>
+  </defs>
+  <path id="SvgjsPath1013" d="M404 2361C404 2357.68629 406.68629 2355 410 2355C413.31371 2355 416 2357.68629 416 2361C416 2364.31371 413.31371 2367 410 2367C406.68629 2367 404 2364.31371 404 2361Z " fill="#e5d9be" fill-opacity="1" transform="matrix(1,0,0,1,-404,-2355)"></path>
+  <path id="SvgjsPath1014" d="M404 2361C404 2357.68629 406.68629 2355 410 2355C413.31371 2355 416 2357.68629 416 2361C416 2364.31371 413.31371 2367 410 2367C406.68629 2367 404 2364.31371 404 2361Z " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="#e5d9be" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#SvgjsClipPath1016&quot;)" transform="matrix(1,0,0,1,-404,-2355)"></path>
+</svg>

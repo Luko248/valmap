@@ -1,0 +1,188 @@
+﻿@import 'base.scss';
+
+.product-content-section {
+    height: auto;
+    overflow: hidden;
+    background-color: $section1;
+    text-align: center;
+    border-bottom-right-radius: 10em;
+
+    &__title {
+        margin-top: 10%;
+        font-size: 30px;
+        color: $gold;
+        display: block;
+    }
+
+    &__text {
+        padding: 20px 50px 90px 50px;
+        font-size: 18px;
+        color: $text-color;
+        display: block;
+    }
+
+    .text-container {
+        display: inline-block;
+        height: auto;
+        vertical-align: middle;
+        border-bottom-right-radius: 10em;
+        margin-top: 100px;
+    }
+
+    .image-container {
+        display: inline-block;
+        height: auto;
+        vertical-align: middle;
+        margin-top: 100px;
+
+        &__image {
+            vertical-align: middle;
+            width: 90%;
+            height: auto;
+            max-height: 420px;
+            border-top-left-radius: 4.3em;
+            border-bottom-right-radius: 4.3em;
+            -webkit-box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.75);
+        }
+    }
+}
+
+.caroulsel-container {
+    background-color: $section2;
+    border-top-left-radius: 10em;
+
+    .single-item {
+        display: none;
+    }
+
+    .slider {
+        padding: 70px 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 0px !important;
+
+        .slick-dots {
+            bottom: initial;
+
+            li button:before {
+                color: $text-color;
+            }
+        }
+
+        .slick-slide {
+            margin: 20px;
+
+            a {
+                color: transparent;
+                font-size: 18px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &:hover {
+                a {
+                    color: $gold;
+                    text-decoration: none;
+                    transition: all .3s;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 162px;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                cursor: pointer;
+                border-top-left-radius: 2.3em;
+                border-bottom-right-radius: 2.3em;
+                -webkit-box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.75);
+                transition: all 0.3s;
+
+                &:hover {
+                    -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                    transition: all 0.3s;
+                }
+            }
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: $text-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .product-content-section {
+        border-bottom-right-radius: 5em;
+
+        &__text {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .product-content-section {
+        .text-container {
+            margin-top: 10rem;
+        }
+
+        &__text {
+            padding-bottom: 0;
+        }
+
+        .image-container {
+            margin-top: 0;
+            margin: 6em 0;
+
+            &__image {
+                max-width: 700px;
+                height: auto;
+                margin: 0;
+            }
+        }
+    }
+
+    .caroulsel-container {
+        border-top-left-radius: 5em;
+
+        .center {
+            display: none;
+        }
+
+        .single-item {
+            display: block;
+            max-width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .product-content-section {
+
+        .text-container {
+        }
+
+        &__text {
+            padding: 20px 0 40px 0 !important;
+        }
+
+        .image-container {
+            display: none;
+        }
+    }
+
+    .slick-next, .slick-prev{
+        display: none !important;
+    }
+}

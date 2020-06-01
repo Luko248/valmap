@@ -1,0 +1,218 @@
+﻿@import 'base.scss';
+
+.demand-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: $section2;
+    border-top-left-radius: 10em;
+    padding: 50px 0 100px 0;
+
+    &__title {
+        display: block;
+        width: 100%;
+        color: $gold;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 50px 0;
+        padding-top: 150px !important;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        display: inline-block;
+        color: $text-color;
+        font-size: 18px;
+        padding: 0 200px;
+    }
+}
+
+.contact-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: $section1;
+    border-top-left-radius: 10em;
+
+    .contact-form {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        height: auto;
+        overflow: hidden;
+
+
+        .validation-message {
+            font-size: 18px;
+            margin-bottom: 0 !important;
+            color: $validation-red;
+        }
+
+        .questions {
+            margin: 0 auto;
+
+            h2 {
+                cursor: pointer;
+                font-size: 18px !important;
+                padding-bottom: 0 !important;
+            }
+
+            .question-name {
+                border-bottom: 1px solid $text-color;
+                text-align: center;
+                color: $text-color;
+                line-height: 32px;
+            }
+
+            .question-body {
+                display: block;
+
+                .demand-products {
+                    width: 100%;
+                    margin-top: 17px;
+
+                    .button-overlay {
+                        margin-bottom: 15px;
+                        height: 35px;
+
+                        .text {
+                            color: $gold;
+                            background-color: transparent;
+                            display: block;
+                            border-radius: 2px;
+                            width: 100%;
+                            text-align: center;
+                            line-height: 35px;
+                            position: relative;
+                            top: -35px;
+                        }
+
+                        .button {
+                            width: 100%;
+                            height: 35px;
+                            background-color: transparent;
+                            background: no-repeat fixed;
+                            background-size: 100% !important;
+                            border: none;
+                            border-radius: 2px;
+                            padding: 0;
+
+                            &.product1 {
+                                background: url(/Resources/images/Demand/exterier-poptavka-grey.jpg) no-repeat;
+                            }
+
+                            &.product2 {
+                                background: url(/Resources/images/Demand/interier-poptavka-grey.jpg) no-repeat;
+                            }
+
+                            &.product3 {
+                                background: url(/Resources/images/Demand/strechy-poptavka-grey.jpg) no-repeat;
+                            }
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            transition: all 0.3s;
+
+                            .text {
+                                transition: all 0.3s;
+                                background-color: $transparent-black;
+                            }
+
+                            .button {
+                                transition: all 0.3s;
+                                background-size: 100% !important;
+                                -webkit-box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.75);
+                                -moz-box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.75);
+                                box-shadow: 0px 0px 17px 4px rgba(0,0,0,0.75);
+
+                                &.product1 {
+                                    background: url(/Resources/images/Demand/exterier-poptavka.jpg) no-repeat;
+                                }
+
+                                &.product2 {
+                                    background: url(/Resources/images/Demand/interier-poptavka.jpg) no-repeat;
+                                }
+
+                                &.product3 {
+                                    background: url(/Resources/images/Demand/strechy-poptavka.jpg) no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+        }
+
+        &__input {
+            border-radius: 2px;
+            padding: 5px 10px;
+            border: none;
+            background-color: $text-color;
+            color: $navigation-text-dark;
+            margin-bottom: 15px;
+            font-size: 18px;
+            width: 100%;
+
+            @include placeholder {
+                color: lighten($navigation-text, 50%);
+                font-size: 18px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__message {
+            margin: 20px 0;
+            width: 100%;
+            padding: 10px;
+            min-height: 200px;
+            border-radius: 2px;
+            background-color: $text-color;
+            color: $navigation-text-dark;
+            font-size: 18px;
+
+            @include placeholder {
+                color: lighten($navigation-text, 50%);
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .demand-section {
+
+        &__text {
+            padding: 0;
+        }
+
+        .contact-section {
+            .help-column {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 478px) {
+
+    .demand-section {
+
+        &__form {
+
+            &__input-box {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,558 @@
+﻿@import 'base.scss';
+
+.banner-section {
+    background-color: transparent;
+    width: 100%;
+    min-height: 650px;
+    height: auto;
+    overflow: hidden;
+
+
+    .banner-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+
+        &__title {
+            color: $gold;
+            display: block;
+            font-size: 4vw;
+            margin-top: 250px;
+            font-family: $Montserrat !important;
+        }
+
+        &__subtitle {
+            display: block;
+            padding-top: 50px;
+            margin: 0 auto;
+            color: $gold;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            font-family: $Montserrat !important;
+        }
+    }
+}
+
+.about-section {
+    width: 100%;
+    height: auto;
+    background-color: $section1;
+    text-align: center;
+    padding-bottom: 100px;
+    border-bottom-right-radius: 10em;
+
+    &__title {
+        display: inline-block;
+        color: $gold;
+        font-size: 30px;
+        font-weight: 600;
+        padding-top: 100px;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        display: inline-block;
+        color: $text-color;
+        font-size: 18px;
+        padding: 0 100px;
+        line-height: 25px;
+    }
+}
+
+.products-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: $section2;
+    border-top-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+
+    &__title {
+        display: block;
+        width: 100%;
+        color: $gold;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 50px 0;
+        text-transform: uppercase;
+    }
+
+    .content-wrapper {
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 3px;
+        margin-bottom: 100px;
+
+
+        &__title {
+            display: block;
+            color: transparent;
+            font-size: 30px;
+            font-weight: bold;
+            z-index: 5;
+            display: block;
+            line-height: 290px;
+            position: absolute;
+            left: 25px;
+            right: 25px;
+            height: 290px;
+            border: 5px solid $section1;
+            border-top-left-radius: 2em;
+            border-bottom-right-radius: 2em;
+
+            &:hover {
+                color: $gold;
+                background-color: rgba(0,0,0,0.6);
+                transition: all 0.5s;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+
+        &__image {
+            width: 100%;
+            height: 290px;
+            transition: 0.3s;
+            cursor: pointer;
+            opacity: 0.8;
+            border-top-left-radius: 4.3em;
+            border-bottom-right-radius: 4.3em;
+        }
+
+        &__description-title {
+            display: block;
+            color: $gold;
+            font-size: 30px;
+            padding: 25px 0;
+        }
+
+        &__description {
+            display: block;
+            color: $text-color;
+            font-size: 18px;
+        }
+    }
+}
+
+.contact-section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: $section1;
+    border-top-left-radius: 10em;
+
+    &__title {
+        display: block;
+        width: 100%;
+        color: $gold;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 50px 0;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        display: inline-block;
+        color: $text-color;
+        font-size: 18px;
+        padding: 0 200px;
+    }
+
+    .center-div {
+        .contact-wrapper {
+            margin: 100px 250px;
+            min-height: initial;
+            overflow: hidden;
+            text-align: center;
+        }
+    }
+
+    .contact-wrapper {
+        text-align: center;
+        min-height: 350px;
+        padding: 30px 50px;
+        background-color: $section2;
+        margin: 100px 50px;
+        margin-bottom: 0px;
+        border-top-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        -webkit-box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.75);
+
+
+        &__image {
+            max-width: 150px;
+            max-height: 150px;
+            margin: 0 auto;
+            margin-bottom: 20px !important;
+        }
+
+        &__name {
+            font-size: 20px;
+            color: $gold;
+            display: block;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        &__email, &__phone {
+            display: block;
+            width: 230px;
+            margin-bottom: 10px !important;
+            font-size: 18px;
+            line-height: 30px;
+            color: $text-color;
+            text-align: left;
+            padding-left: 40px;
+            margin: 0 auto;
+        }
+
+        &__email {
+            background: url(/Resources/images/Icons/mail_ico.png) no-repeat left;
+        }
+
+        &__phone {
+            background: url(/Resources/images/Icons/phone_ico.png) no-repeat left;
+        }
+
+        &__about {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: $text-color;
+            text-align: left;
+            padding-left: 115px;
+
+            &.no-padding {
+                padding: 0 !important;
+                text-align: center;
+            }
+        }
+
+        &__about-item {
+            max-width: 250px;
+            display: block;
+            margin: 5px 0 5px 75px;
+            font-size: 18px;
+            color: $text-color;
+            background: url(/Resources/images/Icons/dot-active.svg) no-repeat left;
+            text-align: left;
+            padding-left: 25px;
+        }
+    }
+}
+
+.smallbanner-section {
+    background-color: transparent;
+    height: 150px;
+
+    &__title {
+        color: $gold;
+        font-size: 30px;
+        line-height: 150px;
+        text-transform: uppercase;
+    }
+}
+
+.projects-section {
+    height: auto;
+    overflow: hidden;
+    background-color: $section2;
+    border-bottom-right-radius: 10em;
+    padding: 50px 0;
+
+    .content-wrapper {
+
+        .desc1 {
+            padding-top: 40px;
+        }
+
+        &__title {
+            color: $gold;
+            font-size: 30px;
+            display: block;
+            padding-bottom: 35px;
+            text-transform: uppercase;
+        }
+
+        &__project-detail {
+            display: block;
+            width: 200px;
+            text-align: left;
+            margin: 0 auto;
+            padding-left: 25px;
+            height: 50px;
+            line-height: 50px;
+            color: $text-color;
+            font-size: 18px;
+            background: url(/Resources/images/Icons/dot-active.svg) no-repeat left;
+        }
+
+
+        &__description {
+            color: $text-color;
+            font-size: 18px;
+            display: block;
+            padding-bottom: 35px;
+        }
+
+        .image-container {
+            height: 200px;
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 2.3em;
+                border-bottom-right-radius: 2.3em;
+                border: 5px solid $section1;
+            }
+        }
+    }
+}
+//responsive
+@media screen and (max-width: 1300px) {
+    .banner-section {
+        .banner-content {
+            &__title {
+                font-size: 6vw;
+            }
+        }
+    }
+
+    .contact-section {
+
+        .contact-wrapper {
+            padding-left: 20px !important;
+        }
+
+        .center-div {
+            .contact-wrapper {
+                margin: 100px !important;
+
+                &__about-item {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .banner-section {
+        .banner-content {
+            width: auto;
+
+            &__title {
+                margin-top: 100px !important;
+                padding-top: 100px;
+                height: 100px;
+                line-height: 100px;
+                font-size: 7vw;
+            }
+
+            &__subtitle {
+                padding-top: 150px;
+            }
+        }
+    }
+
+    .products-section {
+        border-bottom-right-radius: 5em;
+
+        .content-wrapper {
+            margin-bottom: 3rem;
+
+            &__title {
+                max-width: 500px !important;
+                margin: 0 auto;
+            }
+
+            &__image {
+                max-width: 500px;
+            }
+        }
+    }
+
+    .projects-section {
+        border-bottom-right-radius: 5em;
+
+        .second-container {
+            margin-top: 3rem;
+        }
+
+        .content-wrapper {
+
+            .desc1 {
+                padding-top: 0 !important;
+            }
+
+            .image-container {
+                height: auto;
+                height: 210px !important;
+                overflow: hidden;
+                margin: 20px 0;
+            }
+
+            .single-item {
+                max-width: 500px !important;
+                width: auto;
+                height: 290px !important;
+
+                .slick-slide {
+                    height: 290px !important;
+
+                    img {
+                        max-width: 480px !important;
+                        width: auto;
+                        height: 290px !important;
+                        margin: 0 auto !important;
+                    }
+                }
+
+                .slick-next {
+                    right: -15px !important;
+                }
+            }
+
+            &__project-detail {
+                display: none;
+            }
+        }
+    }
+
+    .about-section {
+        border-bottom-right-radius: 5em;
+        padding-bottom: 3rem;
+
+        &__title {
+            padding-top: 3rem;
+        }
+    }
+
+    .contact-section {
+        border-top-left-radius: 5em;
+
+        &__title {
+            padding-bottom: 1rem;
+        }
+
+        &__text {
+            padding: 0;
+            padding-bottom: 2rem;
+        }
+
+        .contact-wrapper {
+            text-align: center;
+            padding: 30px 0 !important;
+            margin: 2.5rem 0;
+
+            &__email, &__phone {
+                width: 95% !important;
+                text-align: center;
+            }
+
+            &__about {
+                text-align: center !important;
+                padding: 0 !important;
+            }
+        }
+
+        .center-div {
+            margin-top: 2.5rem;
+
+            .contact-wrapper {
+                margin: 0 !important;
+                margin-bottom: 100px !important;
+
+
+
+                &__about-item {
+                    max-width: 260px !important;
+                    margin: 0 auto !important;
+                    display: block;
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 478px) {
+
+    .banner-section {
+        min-height: 400px !important;
+
+        .banner-content {
+            &__title {
+                margin-top: 0 !important;
+                font-size: 10vw;
+            }
+
+            &__subtitle {
+                padding-top: 100px;
+                font-size: 5vw;
+            }
+        }
+    }
+
+    .about-section {
+        &__text {
+            padding: 0 2rem !important;
+        }
+    }
+
+    .products-section {
+
+        &__title {
+            padding: 3rem 2rem;
+        }
+
+        .content-wrapper {
+            &__title {
+                height: 200px !important;
+                line-height: 200px !important;
+            }
+
+            &__image {
+                height: 200px !important;
+            }
+        }
+    }
+
+    .smallbanner-section {
+        &__title {
+            font-size: 8vw;
+        }
+    }
+
+    .projects-section {
+        .section-content {
+            padding: 0 !important;
+
+            .content-wrapper {
+                .image-container {
+                    margin: 0;
+
+                    .slider .slick-slide.slick-current.slick-active {
+                        width: auto !important;
+                        margin: 0 !important;
+
+                        img {
+                            height: 200px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

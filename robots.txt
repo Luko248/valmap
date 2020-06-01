@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Allow: .js
+Allow: .css
+
+Sitemap: http://valmap.cz/sitemap.xml
